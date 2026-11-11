@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Loan Officer Website Development | Medina Creative</title>
-<meta name="description" content="Websites for independent loan officers in Texas. You handle the loans. I'll handle the website: design, branding, writing, hosting, and every update after.">
-<meta property="og:title" content="Loan Officer Website Development | Medina Creative">
-<meta property="og:description" content="You handle the loans. I'll handle the website. Websites for independent loan officers in Texas.">
+<title>Websites for Loan Officers &amp; Real Estate Agents | Medina Creative</title>
+<meta name="description" content="Websites for Texas loan officers and real estate agents. Design, branding, writing, hosting, and every update after, done for you.">
+<meta property="og:title" content="Websites for Loan Officers &amp; Real Estate Agents | Medina Creative">
+<meta property="og:description" content="Websites for Texas loan officers and real estate agents, designed, written, and kept up to date for you.">
 <meta property="og:type" content="website">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -111,44 +111,104 @@ footer .w{display:flex;justify-content:space-between}
 .floor,.floorlight,.win{display:none!important}.room{background:radial-gradient(60% 70% at 80% 0%,rgba(243,190,120,.22),transparent 60%),radial-gradient(50% 60% at 0% 100%,rgba(60,100,190,.35),transparent 70%),#0e1830!important}
 .room:before{background:linear-gradient(100deg,transparent,rgba(255,225,170,.16) 35%,rgba(255,225,170,.08) 65%,transparent)!important;mix-blend-mode:normal!important}.room:after{background:rgba(255,225,170,.07)!important}
 .room h1,.room .lead,.room .ptitle,.room nav,.room nav a,.room .word,.room nav ul{color:#f4ece0!important}.room .ptitle{border-color:#f4ece0!important}.room .callbtn{color:#f4ece0!important;border-color:#f4ece0!important}.room .mail{border-color:#f4ece0!important}.room h1 em{color:#e9b35a!important}.room .ptitle span,.room .mono{color:#e9b35a!important}.room .mailbtn{background:#e9b35a!important;color:#0e1830!important}
+
+/* SHOWCASE */
+.case{display:grid;grid-template-columns:7fr 5fr;gap:60px;align-items:center}
+.stage{position:relative;padding:0 0 60px}
+.browser{border-radius:10px;overflow:hidden;background:#fff;box-shadow:0 30px 60px -25px rgba(21,33,61,.45),0 0 0 1px rgba(21,33,61,.12)}
+.browser .bar{height:30px;background:#ece3d5;display:flex;align-items:center;gap:6px;padding:0 12px}
+.browser .bar i{width:9px;height:9px;border-radius:50%;background:#cbb9a1;display:block}
+.browser .bar span{margin-left:12px;font:11px "JetBrains Mono",monospace;color:#7d6a58;background:#f8f2e8;padding:3px 12px;border-radius:4px}
+.browser img{display:block;width:100%}
+.phone{position:absolute;right:-24px;bottom:0;width:27%;border-radius:26px;background:#0e1830;padding:8px;box-shadow:0 30px 50px -20px rgba(14,24,48,.6)}
+.phone img{display:block;width:100%;aspect-ratio:9/17;object-fit:cover;object-position:top;border-radius:19px}
+.facts dt{font-family:"JetBrains Mono";font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--wine);margin-top:22px}
+.facts dd{font-size:17px;color:var(--ink);margin-top:4px}
+.facts ul{list-style:none;margin-top:6px}.facts li{padding:7px 0;border-bottom:1px solid #d7c8b3;font-size:16px}
+.facts li:before{content:"✓";color:var(--wine);margin-right:10px}
+.visit{display:inline-block;margin-top:26px;color:var(--navy);font-weight:600;border-bottom:1.5px solid var(--navy);text-decoration:none}
+.casename{font-family:Gloock;font-size:40px;color:var(--navy);line-height:1.05}
+/* AUDIENCES */
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:28px;margin-top:40px}
+.card{background:#fff;border:1px solid #d7c8b3;padding:38px 40px}
+.card h3{font-family:Gloock;font-weight:400;font-size:38px;color:var(--navy);line-height:1.05;margin:10px 0 14px}
+.card p{color:var(--mut)}
+.card ul{list-style:none;margin-top:18px}.card li{padding:9px 0;border-top:1px solid #e6dac8}
+.card li:before{content:"→";color:var(--wine);margin-right:10px}
+.card.dark{background:var(--navy);border-color:var(--navy);color:#efe5d6}.card.dark h3{color:#f4ece0}.card.dark p{color:#b9aea0}.card.dark li{border-color:rgba(255,255,255,.12)}.card.dark li:before{color:#e9b35a}.card.dark .mono{color:#e9b35a!important}
+@media(max-width:760px){.case,.aud,.case.wide{grid-template-columns:1fr!important;gap:30px}.phone{right:-6px;width:34%}.casename{font-size:32px}.card{padding:28px 24px}.card h3{font-size:30px}}
+
+/* ROOMIER LAYOUT */
+body{font-size:18px;line-height:1.7}
+.w{max-width:1280px;padding:0 48px}
+.room{min-height:1000px!important}.hero{padding-top:120px}.row{margin-top:56px}
+.get{padding:170px 0 60px}#who{padding:170px 0 30px!important}
+.head{padding-bottom:28px}
+.aud{gap:40px;margin-top:64px}
+.card{padding:56px 56px 52px}.card h3{font-size:46px;margin:16px 0 20px}.card p{font-size:18px}.card ul{margin-top:28px}.card li{padding:14px 0;font-size:17px}
+.items{margin-top:16px}.it{padding:52px 56px 52px 0;grid-template-columns:72px 1fr}.it:nth-child(even){padding-left:56px}
+.it h3{font-size:32px}.it p{font-size:17.5px;margin-top:12px;max-width:470px}
+.story{gap:120px;padding:200px 0}.story h2{font-size:64px}.story p{font-size:19px;margin-bottom:24px}
+.quote{padding:170px 0}blockquote{font-size:58px}
+.work{padding:180px 0 200px}.case{gap:90px}
+.facts dt{margin-top:30px}.facts li{padding:12px 0;font-size:17px}.casename{font-size:48px}
+.end{padding:190px 0 140px}.end .w{gap:120px}
+footer{padding:32px 0}
+@media(max-width:760px){
+ body{font-size:17px}.w{padding:0 20px}.hero{padding-top:56px}
+ .get{padding:110px 0 30px}#who{padding:110px 0 10px!important}.aud{gap:24px;margin-top:40px}
+ .card{padding:36px 26px}.card h3{font-size:34px}
+ .it,.it:nth-child(even){padding:36px 0;grid-template-columns:48px 1fr}.it h3{font-size:27px}
+ .story{padding:120px 0;gap:40px}.story h2{font-size:42px}
+ .quote{padding:110px 0}blockquote{font-size:34px}
+ .work{padding:110px 0 120px}.case{gap:50px}.casename{font-size:36px}
+ .end{padding:120px 0 90px}.end .w{gap:50px}
+}
 </style></head><body>
 
 <div class="room">
  
  <nav><div class="w"><div class="word">Medina Creative<small>TX</small></div>
-  <ul><li><a href="#included">What you get</a></li><li><a href="#why">Why me</a></li><li><a href="#work">Work</a></li><li><a href="#pricing">Pricing</a></li></ul>
+  <ul><li><a href="#who">Who I build for</a></li><li><a href="#included">What you get</a></li><li><a href="#why">Why me</a></li><li><a href="#work">Work</a></li><li><a href="#pricing">Pricing</a></li></ul>
   <div class="contact"><a class="mail" href="mailto:wyatt@medinacreative.co">wyatt@medinacreative.co</a><a class="mail" href="tel:+13038835120">303‑883‑5120</a></div></div></nav>
  <div class="w hero">
-  <div class="ptitle">Loan Officer Website Development <span>· Texas</span></div>
-  <h1>I build your website, so you can <em>focus on loans.</em></h1>
+  <div class="ptitle">Websites for Loan Officers &amp; Real Estate Agents <span>· Texas</span></div>
+  <h1>I build your website, so you can <em>focus on your clients.</em></h1>
   <div class="row">
-   <div><p class="lead">Custom websites for Texas loan officers, designed, written, and kept up to date for you.</p><div class="mono rate" style="margin-top:22px;color:var(--wine)">Founding rate · $79/mo · No setup fee · 5 spots</div></div>
+   <div><p class="lead">Custom websites for Texas loan officers and real estate agents, designed, written, and kept up to date for you.</p><div class="mono rate" style="margin-top:22px;color:var(--wine)">Design · writing · hosting · updates</div></div>
    <div class="btns"><a class="mailbtn" href="mailto:wyatt@medinacreative.co">Email Wyatt <span>→</span></a><a class="callbtn" href="tel:+13038835120">Call or text 303‑883‑5120</a></div>
   </div>
  </div>
  
 </div>
 
+<section class="w get" id="who" style="padding-bottom:0">
+ <div class="head"><h2>Who I build for</h2><div class="mono" style="color:var(--wine)">01 — Two kinds of clients</div></div>
+ <div class="aud">
+  <div class="card"><div class="mono" style="color:var(--wine)">Loan officers</div><h3>A site borrowers can trust.</h3><p>Built around your NMLS details and the questions borrowers actually ask.</p><ul><li>Your story and the loan types you work with</li><li>Educational DTI calculator</li><li>NMLS, Equal Housing, and Texas SML notice</li></ul></div>
+  <div class="card dark"><div class="mono">Real estate agents</div><h3>A site that sells you, not just the listing.</h3><p>A home base you own, separate from your brokerage profile.</p><ul><li>Your story, your market, your listings</li><li>Neighborhood, buyer, and seller pages</li><li>Brokerage info and TREC notices</li></ul></div>
+ </div>
+</section>
 <section class="w get" id="included">
- <div class="head"><h2>What you get</h2><div class="mono" style="color:var(--wine)">01 — Included</div></div>
+ <div class="head"><h2>What you get</h2><div class="mono" style="color:var(--wine)">02 — Included</div></div>
  <div class="items">
   <div class="it"><div class="mono">A</div><div><h3>A site that sounds like you</h3><p>Your story, your market, your voice. Written for you, not pulled from a template.</p></div></div>
   <div class="it"><div class="mono">B</div><div><h3>Branding, handled</h3><p>Colors, type, and a look that fits you, with no logo or design brief required.</p></div></div>
-  <div class="it"><div class="mono">C</div><div><h3>DTI calculator</h3><p>An educational tool borrowers can use on your site. The math stays in their browser.</p></div></div>
-  <div class="it"><div class="mono">D</div><div><h3>First‑Time Homebuyer Readiness Kit<span class="badge">Extra</span></h3><p>A digital guide you can hand to first‑time buyers so they show up to your first call prepared.</p></div></div>
-  <div class="it"><div class="mono">E</div><div><h3>Compliance footer on every page</h3><p>NMLS IDs, NMLS Consumer Access, Equal Housing, and the Texas SML notice.</p></div></div>
+  <div class="it"><div class="mono">C</div><div><h3>Tools for your clients</h3><p>Loan officers get an educational DTI calculator. Agents get pages for listings, neighborhoods, and buyer and seller guides.</p></div></div>
+  <div class="it"><div class="mono">D</div><div><h3>First‑Time Homebuyer Readiness Kit<span class="badge">Extra</span></h3><p>A digital guide with your name on it that you can hand to first‑time buyers, so they show up to your first call prepared.</p></div></div>
+  <div class="it"><div class="mono">E</div><div><h3>Texas disclosures, built in</h3><p>Loan officers: NMLS IDs, Consumer Access, Equal Housing, and the SML notice. Agents: your brokerage and the TREC notices.</p></div></div>
   <div class="it"><div class="mono">F</div><div><h3>Hosting and every update after</h3><p>Email or text me a change. No logins, no plugins, no page builder.</p></div></div>
  </div>
 </section>
 
 <section class="w story" id="why">
  <div>
-  <div class="mono" style="color:var(--wine)">02 — Why me</div>
+  <div class="mono" style="color:var(--wine)">03 — Why me</div>
   <h2>I know mortgage from the inside, and it shows in the work.</h2>
  </div>
  <div style="padding-top:40px">
-  <p>For the past year I've been in the day-to-day of a Texas mortgage business. I've seen the borrower questions, the compliance reviews, and how much a loan officer's week is already full.</p>
-  <p>That's why my process asks so little of you: a short conversation, a headshot, your NMLS numbers. I write the copy, design the brand, build the site, and keep it current. You keep closing loans.</p>
+  <p>For the past year I've been in the day-to-day of a Texas mortgage business. I've seen the borrower questions, the compliance reviews, and how full a loan officer's or agent's week already is.</p>
+  <p>That's why my process asks so little of you: a short conversation, a headshot, your NMLS numbers. I write the copy, design the brand, build the site, and keep it current. You keep working with clients.</p>
   <div class="me"><img src="img/wyatt.jpg" alt="Wyatt Jackson" width="88" height="88"><div><div class="sig" style="margin:0">Wyatt Jackson</div><div class="mono" style="color:var(--mut)">Founder, Medina Creative</div></div></div>
  </div>
 </section>
@@ -161,15 +221,27 @@ footer .w{display:flex;justify-content:space-between}
 
 
 <section class="w work" id="work">
- <div class="head" style="margin-bottom:30px"><h2>Recent work</h2><div class="mono" style="color:var(--wine)">03 — Live</div></div>
- <div class="shot"><a href="https://medinamortgage.co" target="_blank" rel="noopener"><img src="img/medina-about.jpg" alt="Medina Mortgage Co. website, About Jason page"></a></div>
- <div class="wl mono"><span>Medina Mortgage Co. · Dallas, Texas</span><a href="https://medinamortgage.co" target="_blank" rel="noopener" style="color:inherit">medinamortgage.co ↗</a></div>
+ <div class="head" style="margin-bottom:50px"><h2>Recent work</h2><div class="mono" style="color:var(--wine)">04 — Live</div></div>
+ <div class="case">
+  <div class="stage">
+   <div class="browser"><div class="bar"><i></i><i></i><i></i><span>medinamortgage.co</span></div><img src="img/medina-home.jpg" alt="Medina Mortgage Co. homepage on desktop" width="1440" height="900"></div>
+   <div class="phone"><img src="img/medina-home-phone.jpg" alt="Medina Mortgage Co. homepage on a phone"></div>
+  </div>
+  <div>
+   <div class="mono" style="color:var(--wine)">Loan officer site · Dallas, Texas</div>
+   <div class="casename" style="margin-top:12px">Medina Mortgage Co.</div>
+   <dl class="facts">
+    <dt>What I did</dt><dd><ul><li>Brand colors and type</li><li>All of the writing</li><li>DTI calculator and homebuyer toolkit</li><li>Texas compliance footer on every page</li><li>Hosting and ongoing updates</li></ul></dd>
+   </dl>
+   <a class="visit" href="https://medinamortgage.co" target="_blank" rel="noopener">Visit the live site ↗</a>
+  </div>
+ </div>
 </section>
 
 <section class="end" id="pricing"><div class="w">
- <div><div class="mono" style="color:var(--wine);margin-bottom:20px">04 — Get started</div><h2>One email or call. I'll take it from there.</h2></div>
- <div class="price"><div class="n">$79<small> / month, founding rate</small></div>
-  <p>First five Texas loan officers. No setup fee. Design, hosting, and updates included.</p>
+ <div><div class="mono" style="color:var(--wine);margin-bottom:20px">05 — Get started</div><h2>One email or call. I'll take it from there.</h2></div>
+ <div class="price"><div class="n">$99<small> / month, plus a $500 setup fee</small></div>
+  <p>For Texas loan officers and real estate agents. Design, writing, hosting, and updates included.</p>
   <div class="btns" style="flex-direction:row;flex-wrap:wrap"><a class="mailbtn" href="mailto:wyatt@medinacreative.co">wyatt@medinacreative.co <span>→</span></a><a class="callbtn" href="tel:+13038835120">303‑883‑5120</a></div></div>
 </div></section>
 <footer><div class="w"><span>© 2026 Medina Creative · a Medina LLC company</span><span>wyatt@medinacreative.co · 303‑883‑5120</span></div></footer>
