@@ -119,7 +119,7 @@ footer .w{display:flex;justify-content:space-between}
 .browser .bar{height:30px;background:#ece3d5;display:flex;align-items:center;gap:6px;padding:0 12px}
 .browser .bar i{width:9px;height:9px;border-radius:50%;background:#cbb9a1;display:block}
 .browser .bar span{margin-left:12px;font:11px "JetBrains Mono",monospace;color:#7d6a58;background:#f8f2e8;padding:3px 12px;border-radius:4px}
-.browser img{display:block;width:100%}
+.browser img{display:block;width:100%;height:auto}
 .phone{position:absolute;right:-24px;bottom:0;width:27%;border-radius:26px;background:#0e1830;padding:8px;box-shadow:0 30px 50px -20px rgba(14,24,48,.6)}
 .phone img{display:block;width:100%;aspect-ratio:9/17;object-fit:cover;object-position:top;border-radius:19px}
 .facts dt{font-family:"JetBrains Mono";font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--wine);margin-top:22px}
@@ -136,7 +136,7 @@ footer .w{display:flex;justify-content:space-between}
 .card ul{list-style:none;margin-top:18px}.card li{padding:9px 0;border-top:1px solid #e6dac8}
 .card li:before{content:"→";color:var(--wine);margin-right:10px}
 .card.dark{background:var(--navy);border-color:var(--navy);color:#efe5d6}.card.dark h3{color:#f4ece0}.card.dark p{color:#b9aea0}.card.dark li{border-color:rgba(255,255,255,.12)}.card.dark li:before{color:#e9b35a}.card.dark .mono{color:#e9b35a!important}
-@media(max-width:760px){.case,.aud,.case.wide{grid-template-columns:1fr!important;gap:30px}.phone{right:-6px;width:34%}.casename{font-size:32px}.card{padding:28px 24px}.card h3{font-size:30px}}
+@media(max-width:760px){.case,.aud,.case.wide{grid-template-columns:1fr!important;gap:30px}.phone{right:8px;width:34%}.casename{font-size:32px}.card{padding:28px 24px}.card h3{font-size:30px}}
 
 /* ROOMIER LAYOUT */
 body{font-size:18px;line-height:1.7}
@@ -164,6 +164,15 @@ footer{padding:32px 0}
  .work{padding:110px 0 120px}.case{gap:50px}.casename{font-size:36px}
  .end{padding:120px 0 90px}.end .w{gap:50px}
 }
+
+/* Full-width showcase */
+.case.full{grid-template-columns:1fr;gap:40px}
+.case.full .stage{padding:0 0 40px}
+.case.full .phone{width:17%;right:-12px}
+.casemeta{display:grid;grid-template-columns:5fr 7fr;gap:60px;align-items:start}
+.casemeta .facts dt{margin-top:0}
+.casemeta .facts ul{columns:2;column-gap:40px}.casemeta .facts li{break-inside:avoid}
+@media(max-width:760px){.case.full .phone{width:30%;right:8px}.casemeta{grid-template-columns:1fr;gap:28px}.casemeta .facts ul{columns:1}}
 </style></head><body>
 
 <div class="room">
@@ -222,18 +231,18 @@ footer{padding:32px 0}
 
 <section class="w work" id="work">
  <div class="head" style="margin-bottom:50px"><h2>Recent work</h2><div class="mono" style="color:var(--wine)">04 — Live</div></div>
- <div class="case">
+ <div class="case full">
   <div class="stage">
    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>medinamortgage.co</span></div><img src="img/medina-home.jpg" alt="Medina Mortgage Co. homepage on desktop" width="1440" height="900"></div>
    <div class="phone"><img src="img/medina-home-phone.jpg" alt="Medina Mortgage Co. homepage on a phone"></div>
   </div>
-  <div>
-   <div class="mono" style="color:var(--wine)">Loan officer site · Dallas, Texas</div>
+  <div class="casemeta">
+   <div><div class="mono" style="color:var(--wine)">Loan officer site · Dallas, Texas</div>
    <div class="casename" style="margin-top:12px">Medina Mortgage Co.</div>
+   <a class="visit" href="https://medinamortgage.co" target="_blank" rel="noopener">Visit the live site ↗</a></div>
    <dl class="facts">
     <dt>What I did</dt><dd><ul><li>Brand colors and type</li><li>All of the writing</li><li>DTI calculator and homebuyer toolkit</li><li>Texas compliance footer on every page</li><li>Hosting and ongoing updates</li></ul></dd>
    </dl>
-   <a class="visit" href="https://medinamortgage.co" target="_blank" rel="noopener">Visit the live site ↗</a>
   </div>
  </div>
 </section>
